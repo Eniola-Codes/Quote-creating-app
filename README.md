@@ -1,40 +1,58 @@
-# End result
+# Quote application
 
-Click here : https://quotegenerator-eniola.netlify.app/
+A Quote application where you can create and add quotes, view created quotes and comment on quotes.
 
-# Figma design File
+**End Result**
 
-Click here: https://www.figma.com/file/4IbpmTU6jtpRKdpbFmt4i8/Web-Design-Movie-Dashboard-(Community)-(Copy)?node-id=1%3A2
+Click here : https://quotecreator-by-eniola.netlify.app/
 
-## Getting Started
+# Description
 
-First, run the development server:
+**Details**
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+A Quote application where you can create and add quotes, view created quotes and create and view comments on quotes.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The application contains 4 pages which are the quote page, quote view details, add new quote and page not found. The pages are linked together usng react router v5.3.4
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+The Quote page which is the first page you see when you visit the web app contains a list of created quotes, which are automatically fetched from firbase as the app loads. 
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+You can sort the quote in ascending or descending order which will also take effect in the app URL as well, making the current quote sort order shareable.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Each quote item contains two info, which is the author and the quote, it also contains a 'view details' button that allows you to view the quote details in full screen on a new page, which was achieved using dynamic routing, we used the firebase key as the path name.
 
-## Learn More
+![quote page](https://github.com/Eniola-Codes/MovTime-Movie-App/blob/main/public/Assets/Images/nav.png?raw=true)
 
-To learn more about Next.js, take a look at the following resources:
+The quote details page contains the quote and author on a new page.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![quote big](https://github.com/Eniola-Codes/MovTime-Movie-App/blob/main/public/Assets/Images/nav.png?raw=true)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+It also contains a 'show comments' button that lets you see older comments, also in there contains a 'add a comment' button which then displays a form input for you to add a new comment. After submittig a new comment, it is sent to firebase where is it stored.
 
-## Deploy on Vercel
+![comment](https://github.com/Eniola-Codes/MovTime-Movie-App/blob/main/public/Assets/Images/nav.png?raw=true)
+![comment form](https://github.com/Eniola-Codes/MovTime-Movie-App/blob/main/public/Assets/Images/nav.png?raw=true)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+We then have the add new quote page which is a form that takes two inputs which are : 
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Quote
+- author
+
+![new quote](https://github.com/Eniola-Codes/MovTime-Movie-App/blob/main/public/Assets/Images/nav.png?raw=true)
+
+After submittng a new quote, it is sent and stored on firebase. It will be fetched and displayed automatically when you open the quote page.
+
+**Technologies**
+
+Technologies i used to build this are React.js, Css, Firebase and react router v5.3.4
+
+I used React.js framework to bootstrap this project because of the functionalities below : 
+
+- Props drilling to pass some data from component to component with ease.
+- Access to 3rd party libraries that make the app experience better like react router for smooth transition between pages.
+- Css modules which prevent clashing of classnames around components therefore avoiding unwanted results
+- using Firebase alongside the browser fetch API easily to receive, store and fetch data. 
+
+# Installation and Running
+
+git clone or pull the project using your terminal, open the project folder on your local laptop in a code editor and run "npm start" in your editors terminal.
+
+
