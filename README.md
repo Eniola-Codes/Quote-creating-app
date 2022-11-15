@@ -20,23 +20,23 @@ You can sort the quote in ascending or descending order which will also take eff
 
 Each quote item contains two info, which is the author and the quote, it also contains a 'view details' button that allows you to view the quote details in full screen on a new page, which was achieved using dynamic routing, we used the firebase key as the path name.
 
-![quote page](https://github.com/Eniola-Codes/MovTime-Movie-App/blob/main/public/Assets/Images/nav.png?raw=true)
+![quote page](https://github.com/Eniola-Codes/Quote-creating-app/blob/main/src/assets/quotepage.png?raw=true)
 
 The quote details page contains the quote and author on a new page.
 
-![quote big](https://github.com/Eniola-Codes/MovTime-Movie-App/blob/main/public/Assets/Images/nav.png?raw=true)
+![quote big](https://github.com/Eniola-Codes/Quote-creating-app/blob/main/src/assets/quotecard.png?raw=true)
 
 It also contains a 'show comments' button that lets you see older comments, also in there contains a 'add a comment' button which then displays a form input for you to add a new comment. After submittig a new comment, it is sent to firebase where is it stored.
 
-![comment](https://github.com/Eniola-Codes/MovTime-Movie-App/blob/main/public/Assets/Images/nav.png?raw=true)
-![comment form](https://github.com/Eniola-Codes/MovTime-Movie-App/blob/main/public/Assets/Images/nav.png?raw=true)
+![comment](https://github.com/Eniola-Codes/Quote-creating-app/blob/main/src/assets/comments.png?raw=true)
+![comment form](https://github.com/Eniola-Codes/Quote-creating-app/blob/main/src/assets/addcomments.png?raw=true)
 
 We then have the add new quote page which is a form that takes two inputs which are : 
 
 - Quote
 - author
 
-![new quote](https://github.com/Eniola-Codes/MovTime-Movie-App/blob/main/public/Assets/Images/nav.png?raw=true)
+![new quote](https://github.com/Eniola-Codes/Quote-creating-app/blob/main/src/assets/addquote.png?raw=true)
 
 After submittng a new quote, it is sent and stored on firebase. It will be fetched and displayed automatically when you open the quote page.
 
